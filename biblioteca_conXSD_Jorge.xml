@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+xs:noNamespaceSchemaLocation= "biblioteca_Jorge.xsd">
+    <nombre>Biblioteca Edix</nombre> 
+    <direccion>Calle Aravaca, 12</direccion>
+    <prestamos>
+        <!-- XML sobre libro -->
+        <libro id="L0001" tipo_clase="novela" paginas="800">
+            <titulo>Don Quijote</titulo>
+            <sinopsis>Narra las aventuras de Alonso Quijanoero</sinopsis>  
+            <indice>Indice</indice>          
+            <capitulos>
+                <capitulo paginas="500">
+                    <contenido informacion="https://es.wikipedia.org/wiki/Don_Quijote_de_la_Mancha"/>
+                </capitulo>
+                <capitulo paginas="300">
+                    <contenido informacion="https://es.wikipedia.org/wiki/Don_Quijote_de_la_Mancha"/>
+                </capitulo>
+            </capitulos>           
+        </libro>
+        <libro id="L0002" tipo_clase="infantil" paginas="500">
+            <titulo>Blancanieves</titulo>
+            <sinopsis>Narra las aventuras de Blancanieves</sinopsis>  
+            <indice>Indice</indice>          
+            <capitulos>
+                <capitulo paginas="500">
+                    <contenido informacion="https://es.wikipedia.org/wiki/Blancanieves"/>
+                </capitulo>
+            </capitulos>           
+        </libro>
+        <!-- XML sobre revista -->
+        <revista id="R0001" tipo_clase="informatica" paginas="1">
+            <titulo>HobbyConsolas</titulo>
+            <numero>157</numero>
+            <indice>Indice</indice>
+            <secciones_revista>
+                <seccion_revista paginas="5">
+                    <contenido informacion="https://www.hobbyconsolas.com/noticias/team-cherry-deseando-mostrar-novedades-hollow-knight-silksong-no-haran-esperar-mucho-1059445"/>
+                </seccion_revista>
+                <seccion_revista paginas="10">
+                    <contenido informacion="https://www.hobbyconsolas.com/noticias/batman-unreal-engine-5-podria-verse-juego-batman-next-gen-1059457"/>
+                </seccion_revista>
+            </secciones_revista>
+        </revista>
+        <revista id="R0002" tipo_clase="informatica" paginas="1">
+            <titulo>Meristation</titulo>
+            <numero>50</numero>
+            <indice>Indice</indice>
+            <secciones_revista>
+                <seccion_revista paginas="20">
+                    <contenido informacion="https://as.com/meristation/2022/05/16/noticias/1652688992_752989.html"/>
+                </seccion_revista>
+            </secciones_revista>
+        </revista>
+        <!-- XML sobre periodico -->
+        <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="2022-05-11">
+            <indice>Indice</indice>
+            <secciones_periodico>
+                <seccion_periodico tipo="deportes">
+                    <articulo>
+                        <autor>Jordi Quixano</autor>
+                        <contenido informacion="https://elpais.com/deportes/2022-05-11/el-barcelona-de-balonmano-se-arrima-a-la-final-four-de-la-champions.html"/>
+                    </articulo>
+                </seccion_periodico>
+            </secciones_periodico>
+        </periodico>
+        <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="2022-05-16">
+            <indice>Indice</indice>
+            <secciones_periodico>
+                <seccion_periodico tipo="internacional">
+                    <articulo>
+                        <autor>Marcel Krueger</autor>
+                        <contenido informacion="https://edition.cnn.com/travel/article/wuppertal-schwebebahn-suspension-railway-germany/index.html"/>
+                    </articulo>
+                    <articulo>
+                        <autor>Oliver Berg</autor>
+                        <contenido informacion="https://edition.cnn.com/travel/article/wuppertal-schwebebahn-suspension-railway-germany/index.html"/>
+                    </articulo>
+                </seccion_periodico>
+            </secciones_periodico>
+        </periodico>
+    </prestamos>
+</biblioteca>
